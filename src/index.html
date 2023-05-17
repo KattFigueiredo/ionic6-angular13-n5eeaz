@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cupcake</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionic/3.9.2/css/ionic.min.css">
+</head>
+
+<body>
+
+    <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          font-family: Arial, sans-serif;
+        }
+    
+        ion-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+        }
+    
+        ion-slides {
+          width: 100%;
+          max-width: 500px;
+          margin-bottom: 20px;
+        }
+    
+        ion-slide img { 
+          width: 100%;
+          height: auto;
+        }
+    
+        ion-button {
+          width: 100%;
+          max-width: 300px;
+          margin-bottom: 20px;
+        }
+    
+        ion-list {
+          width: 100%;
+          max-width: 500px;
+        }
+    
+        ion-thumbnail {
+          width: 60px;
+          height: 60px;
+        }
+    
+        h2 {
+          margin: 0;
+          font-size: 18px;
+        }
+    
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+        
+      </style>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>App de Cupcakes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+  <ion-slides class="slider">
+    <ion-slide class="slider-slide">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkdb4-9oC4JLezAKD7YstZ_6yj_wWhTUPmQ&usqp=CAU" alt="Imagem 1">
+    </ion-slide>
+    <ion-slide class="slider-slide">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkdb4-9oC4JLezAKD7YstZ_6yj_wWhTUPmQ&usqp=CAU" alt="Imagem 2">
+    </ion-slide>
+    <ion-slide class="slider-slide">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkdb4-9oC4JLezAKD7YstZ_6yj_wWhTUPmQ&usqp=CAU" alt="Imagem 3">
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+    <ion-button expand="full" color="primary">Comprar</ion-button>
+
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://receitasdetodos.com.br/wp-content/uploads/2022/10/receita-de-cupcake.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Delicioso Cupcake de Chocolate</h2>
+          <p>R$ 5,00</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://moinhoglobo.com.br/wp-content/uploads/2016/02/49-cupcake-rosa-scaled.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Cupcake de Morango Fresco</h2>
+          <p>R$ 4,50</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWsggY0rEa1ZYWBhHBDSVvx2dBWkq7rlXsP_6sp3i0lSik9aj43SqWh95RnWUBEran2Y&usqp=CAU">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Irresistível Cupcake de Baunilha</h2>
+          <p>R$ 4,00</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ionic/3.9.2/js/ionic.bundle.min.js"></script>
+</body>
+
+</html>
